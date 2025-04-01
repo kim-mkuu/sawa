@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2f855a;
+  margin: 0;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #2f855a;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Screen Transition Styles */
+.screen {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  /* Default to visible */
+}
+
+.screen[style*="display: none"] {
+  opacity: 0;
+  /* Seamless fade-out for hidden screens */
+}
+
+/* Background Colors */
+.bg-green-600 {
+  background-color: #2f855a;
+}
+
+.bg-yellow-100 {
+  background-color: #fefcbf;
+}
+
+.bg-red-100 {
+  background-color: #fed7d7;
+}
+
+.bg-green-100 {
+  background-color: #c6f6d5;
+}
+
+.bg-blue-100 {
+  background-color: #bee3f8;
+}
+
+.bg-gray-100 {
+  background-color: #edf2f7;
+}
+
+.bg-gray-300 {
+  background-color: #e2e8f0;
+}
+
+/* Border Radius */
+.rounded {
+  border-radius: 0.5rem;
+}
+
+/* Padding */
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+/* Margins */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+/* Text Styles */
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-blue-600 {
+  color: #3182ce;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+/* Border */
+.border {
+  border: 1px solid #ccc;
+}
+
+.border-t {
+  border-top: 1px solid #ccc;
+}
+
+/* Flexbox Utility Classes */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+/* Spacing Utility Classes */
+.space-x-4>*+* {
+  margin-left: 1rem;
+}
+
+.space-y-2>*+* {
+  margin-top: 0.5rem;
+}
+
+/* Full Width */
+.w-full {
+  width: 100%;
+}
+
+/* Cursor Pointer */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Fixed Footer for Navigation */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+/* Active State for Navigation Buttons */
+button.active {
+  background-color: #2f855a;
+  /* Example: Change background color */
+  color: #fff;
+  font-weight: bold;
+  /* Emphasize the active button */
+}
