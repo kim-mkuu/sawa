@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Agro Weather Advisor Application">
+    <title>Smart Agro Weather Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation Buttons -->
+    <div id="navigation" class="fixed-footer">
+        <button data-target="screen1">Sign Up / Log In</button>
+        <button data-target="screen2">Dashboard</button>
+        <button data-target="screen3">Weather Alerts</button>
+        <button data-target="screen4">Crop Recommendations</button>
+        <button data-target="screen5">Farming Tips</button>
+        <button data-target="screen6">Profile & Settings</button>
+    </div>
+
+    <!-- Screen 1: Sign Up / Log In -->
+    <div id="screen1" class="screen">
+        <div class="p-6 flex flex-col items-center justify-center min-h-screen">
+            <h1 class="text-3xl font-extrabold mb-4 text-green-700">Smart Agro Weather Advisor</h1>
+            <h2 class="text-2xl font-bold mb-4">Sign Up / Log In</h2>
+            <div class="flex space-x-4 mb-6">
+                <button class="px-4 py-2 bg-green-600 text-white rounded">Sign Up</button>
+                <button class="px-4 py-2 bg-gray-300 rounded">Log In</button>
+            </div>
+            <input class="mb-4 p-2 border rounded w-full" type="text" placeholder="Phone Number">
+            <input class="mb-4 p-2 border rounded w-full" type="password" placeholder="Password">
+            <button class="bg-green-600 text-white px-6 py-2 rounded">Get Started</button>
+            <p class="mt-2 text-sm text-blue-600 cursor-pointer">Forgot Password?</p>
+            <p class="mt-6 text-xs text-gray-500">Annotation: Primary input method is phone number.</p>
+        </div>
+    </div>
+
+    <!-- Screen 2: Home Screen -->
+    <div id="screen2" class="screen" style="display: none;">
+        <div class="p-6 min-h-screen flex flex-col">
+            <h1 class="text-xl font-bold mb-4">Dashboard</h1>
+            <div class="mb-4 p-4 bg-yellow-100 rounded">Today's Weather: Sunny, 28°C</div>
+            <div class="space-y-2 mb-6">
+                <button class="w-full bg-green-600 text-white py-2 rounded">Check Weather</button>
+                <button class="w-full bg-green-600 text-white py-2 rounded">Get Crop Advice</button>
+                <button class="w-full bg-green-600 text-white py-2 rounded">Farming Tips</button>
+            </div>
+            <div class="mt-auto border-t pt-4 flex justify-around text-sm">
+                <span>Home</span><span>Weather</span><span>Crops</span><span>Tips</span><span>Profile</span>
+            </div>
+            <p class="mt-2 text-xs text-gray-500">Annotation: Quick actions for ease of use.</p>
+        </div>
+    </div>
+
+    <!-- Screen 3: Weather Alerts Screen -->
+    <div id="screen3" class="screen" style="display: none;">
+        <div class="p-6 min-h-screen flex flex-col">
+            <button class="text-blue-600 text-left mb-4">&larr; Back</button>
+            <h1 class="text-xl font-bold mb-4">Weather Alerts</h1>
+            <div class="p-4 bg-red-100 rounded mb-4">Heavy Rain Expected in 2 Days</div>
+            <button class="w-full bg-green-600 text-white py-2 rounded">View 7-Day Forecast</button>
+            <div class="mt-auto border-t pt-4 flex justify-around text-sm">
+                <span>Home</span><span>Weather</span><span>Crops</span><span>Tips</span><span>Profile</span>
+            </div>
+            <p class="mt-2 text-xs text-gray-500">Annotation: Color-coded alerts for urgency.</p>
+        </div>
+    </div>
+
+    <!-- Screen 4: AI Crop Recommendations Screen -->
+    <div id="screen4" class="screen" style="display: none;">
+        <div class="p-6 min-h-screen flex flex-col">
+            <h1 class="text-xl font-bold mb-4">Crop Recommendations</h1>
+            <select class="mb-4 p-2 border rounded w-full">
+                <option>Select Crop Type</option>
+                <option>Maize</option>
+                <option>Sorghum</option>
+            </select>
+            <div class="p-4 bg-green-100 rounded mb-4">Maize: Recommended due to upcoming rains.</div>
+            <button class="w-full bg-green-600 text-white py-2 rounded">See Planting Guide</button>
+            <div class="mt-auto border-t pt-4 flex justify-around text-sm">
+                <span>Home</span><span>Weather</span><span>Crops</span><span>Tips</span><span>Profile</span>
+            </div>
+            <p class="mt-2 text-xs text-gray-500">Annotation: AI-generated advice based on data.</p>
+        </div>
+    </div>
+
+    <!-- Screen 5: Farming Tips Screen -->
+    <div id="screen5" class="screen" style="display: none;">
+        <div class="p-6 min-h-screen flex flex-col">
+            <h1 class="text-xl font-bold mb-4">Farming Tips</h1>
+            <input class="mb-4 p-2 border rounded w-full" type="text" placeholder="Search Tips">
+            <div class="space-y-2">
+                <div class="p-4 bg-blue-100 rounded">Tip of the Day: Use mulch to retain soil moisture.</div>
+                <div class="p-4 bg-gray-100 rounded">Soil Management</div>
+                <div class="p-4 bg-gray-100 rounded">Water Conservation</div>
+                <div class="p-4 bg-gray-100 rounded">Pest Control</div>
+            </div>
+            <div class="mt-auto border-t pt-4 flex justify-around text-sm">
+                <span>Home</span><span>Weather</span><span>Crops</span><span>Tips</span><span>Profile</span>
+            </div>
+            <p class="mt-2 text-xs text-gray-500">Annotation: Content available offline.</p>
+        </div>
+    </div>
+
+    <!-- Screen 6: Profile & Settings Screen -->
+    <div id="screen6" class="screen" style="display: none;">
+        <div class="p-6 min-h-screen flex flex-col">
+            <h1 class="text-xl font-bold mb-4">Profile & Settings</h1>
+            <input class="mb-4 p-2 border rounded w-full" type="text" placeholder="Name">
+            <input class="mb-4 p-2 border rounded w-full" type="text" placeholder="Phone Number">
+            <select class="mb-4 p-2 border rounded w-full">
+                <option>Preferred Crops</option>
+                <option>Maize</option>
+                <option>Beans</option>
+            </select>
+            <div class="mb-4">
+                <label class="block mb-1">Notifications</label>
+                <input type="checkbox" class="mr-2"> Enable Alerts
+            </div>
+            <div class="mb-4">
+                <label class="block mb-1">Language</label>
+                <select class="p-2 border rounded w-full">
+                    <option>English</option>
+                    <option>Swahili</option>
+                    <option>Hausa</option>
+                </select>
+            </div>
+            <div class="mt-auto border-t pt-4 flex justify-around text-sm">
+                <span>Home</span><span>Weather</span><span>Crops</span><span>Tips</span><span>Profile</span>
+            </div>
+            <p class="mt-2 text-xs text-gray-500">Annotation: Local language support included.</p>
+        </div>
+    </div>
+</body>
+
+</html>
